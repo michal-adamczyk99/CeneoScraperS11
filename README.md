@@ -8,7 +8,7 @@
 |Opinion id|["data-entry-id"]|opinion_id||
 |Author|span.user-post__author-name|author||
 |Recommendation|span.user-post__author-recomendation > em|recommendation||
-|Stars rating|span.user-post__author-recomendation|stars||
+|Stars rating|span.user-post__score-count|stars||
 |Content|div.user-post__text|content||
 |Advantages|div.review-feature__col:has(> div[class$="positives"]) > div.review-feature__item|pros||
 |Disadvantages|div.review-feature__col:has(> div[class$="negatives"]) > div.review-feature__item|pros||
