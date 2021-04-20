@@ -29,7 +29,7 @@
 
 ## Stage 3 - extraction of all opinions from single product
 1. Implementation of loop traversing through consecutve pages with opinions
-2. Loading extracted opinions to .json file
-3. Parameterization of a product id 
+2. Loading extracted opinions to a .json file
+3. Parameterization of product id and reading product id from a standard input
 
 ## Stage 4 - code refactoring

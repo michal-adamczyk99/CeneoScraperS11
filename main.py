@@ -37,7 +37,6 @@ product_id = input("Enter a product ID:")
 
 while True:
     print(page)
-
     response = requests.get(f"https://www.ceneo.pl/{product_id}/opinie-{page}", allow_redirects=False)
     if response.status_code==200: 
         page_dom = BeautifulSoup(response.text, 'html.parser')
