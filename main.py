@@ -1,6 +1,7 @@
 import requests 
 from bs4 import BeautifulSoup
 import json
+import re
 
 def get_component(opinion, selector, attribute=None, return_list=False):
     try:
