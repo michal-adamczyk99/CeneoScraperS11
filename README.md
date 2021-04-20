@@ -2,14 +2,15 @@
 ## Stage 1 - extraction of all components for single opinion 
 1. Extraction of a single web page content
 2. Analisys of a single opinion structure 
+
 |Component|CSS selector|Variable name|Data type|
 |---------|------------|-------------|---------|
-|Opinion|div.user-post_card|opinion||
+|Opinion|div.user-post_card|opinion|dict|
 |Opinion id|["data-entry-id"]|opinion_id|str|
 |Author|span.user-post__author-name|author|str|
 |Recommendation|span.user-post__author-recomendation > em|recommendation|bool|
 |Stars rating|span.user-post__score-count|stars|float|
-|Content|div.user-post__text|content||
+|Content|div.user-post__text|content|str|
 |Advantages|div.review-feature__col:has(> div[class$="positives"]) > div.review-feature__item|pros|list (str)|
 |Disadvantages|div.review-feature__col:has(> div[class$="negatives"]) > div.review-feature__item|cons|list(str)|
 |Verification|div.review-pz|verified|bool|
@@ -17,6 +18,7 @@
 |Purchase date|span.user-post__published > time:nth-child(2)["datetime"]|purchase_date|str|
 |Usefulness count|span[id^="votes-yes"]|usefulness|int|
 |Uselessness count|span[id^="votes-no"]|uselessness|int|
+
 3. Extraction of single opinion components
 4. Transformation of extracted data to given data types
 
