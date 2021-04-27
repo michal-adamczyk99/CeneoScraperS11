@@ -49,7 +49,7 @@ while True:
                 single_opinion["recommendation"] = True if single_opinion[
                     "recommendation"] == "Polecam" else False if single_opinion["recommendation"] == "Nie polecam" else None
                 single_opinion["stars"] = float(
-                    single_opinion["stars"].split("/")[0].replace(", ", "."))
+                    single_opinion["stars"].split("/")[0].replace(",", "."))
                 single_opinion["content"] = re.sub(
                     "\\s", " ", single_opinion["content"])
                 single_opinion["verfied"] = bool(single_opinion["verfied"])
